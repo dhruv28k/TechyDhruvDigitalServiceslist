@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My 50+ Services</title>
+    <style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header,
+        footer {
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        ul {
+            counter-reset: index;
+            padding: 0;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        /* List element */
+        li {
+            counter-increment: index;
+            display: flex;
+            align-items: center;
+            padding: 12px 0;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        /* Element counter */
+        li::before {
+            content: counters(index, ".", decimal-leading-zero);
+            font-size: 1.5rem;
+            text-align: right;
+            font-weight: bold;
+            min-width: 50px;
+            padding-right: 12px;
+            font-variant-numeric: tabular-nums;
+            align-self: flex-start;
+            background-image: linear-gradient(to bottom, aquamarine, orangered);
+            background-attachment: fixed;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Element separation */
+        li+li {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            ul {
+                max-width: 100%;
+            }
+        }
+
+
+
+
+
+        /* pop-up */
+
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 15%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+
+
+        /* Button */
+
+        .btn {
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000000;
+  min-width: 200px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  padding: 16px 20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: .95;
+}
+
+.btn .animation {
+  border-radius: 100%;
+  animation: ripple 1.1s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+  }
+}
+
+
+
+.h1 { 
+        font-size: 30px; 
+        font-family: 'Metal Mania', system-ui;
+        /* Set the background of 
+        the text  */
+        background: 
+            linear-gradient(to right, 
+                #ffffff, 
+                #334efc); 
+        display: inline-block; 
+  
+        /* Clip the background upto 
+        the text  */
+        -webkit-background-clip: text; 
+        background-clip: text; 
+  
+        /* Set the color of the text 
+        to transparent  */
+        color: transparent;
+    } 
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="h1">Techy Dhruv Digital Services List</h1>
+    </header>
+
+    <ul id="servicesList" style="padding-bottom: 20px;">
+
+
+        <li class="service">Social Media Graphics (Facebook posts, Instagram posts, Twitter headers, etc.)</li>
+        <li class="service">Presentations (slideshows, pitch decks, etc.)</li>
+        <li class="service">Posters</li>
+        <li class="service">Flyers</li>
+        <li class="service">Invitations (weddings, parties, events, etc.)</li>
+        <li class="service">Business Cards</li>
+        <li class="service">Logos</li>
+        <li class="service">Infographics</li>
+        <li class="service">Brochures</li>
+        <li class="service">Resumes</li>
+        <li class="service">YouTube Channel Art</li>
+        <li class="service">Book Covers</li>
+        <li class="service">Certificates</li>
+        <li class="service">Menus</li>
+        <li class="service">Email Headers</li>
+        <li class="service">Letterheads</li>
+        <li class="service">CD Covers</li>
+        <li class="service">Magazine Covers</li>
+        <li class="service">Twitch Banners</li>
+        <li class="service">Twitch Overlays</li>
+        <li class="service">Facebook Covers</li>
+        <li class="service">Instagram Stories</li>
+        <li class="service">Pinterest Graphics</li>
+        <li class="service">Zoom Backgrounds</li>
+        <li class="service">Worksheets</li>
+        <li class="service">Calendars</li>
+        <li class="service">Labels</li>
+        <li class="service">Tickets</li>
+        <li class="service">Newsletters</li>
+        <li class="service">Memes</li>
+        <li class="service">Postcards</li>
+        <li class="service">eBooks</li>
+        <li class="service">Album Covers</li>
+        <li class="service">Event Programs</li>
+        <li class="service">Recipe Cards</li>
+        <li class="service">Gift Certificates</li>
+        <li class="service">Greeting Cards</li>
+        <li class="service">Mood Boards</li>
+        <li class="service">Photo Collages</li>
+        <li class="service">Wallpapers</li>
+        <li class="service">Bookmarks</li>
+        <li class="service">Flashcards</li>
+        <li class="service">Stickers</li>
+        <li class="service">Social Media Covers (LinkedIn, Tumblr, etc.)</li>
+        <li class="service">Advertisements</li>
+        <li class="service">Facebook Ads</li>
+        <li class="service">Google Ads</li>
+        <li class="service">Twitter Ads</li>
+        <li class="service">Instagram Story Ads</li>
+        <li class="service">Web Banners</li>
+        <li class="service">Thank You Card Design</li>
+        <li class="service">Gift Tags Design</li>
+        <li class="service">Social Media Quote Graphics</li>
+        <li class="service">Watermark Design</li>
+        <li class="service">& Many More</li>
+
+
+    </ul>
+
+
+
+    <button class="btn" id="myBtn" style="font-size: large;"><i class="animation"></i><b>🔴 Click Me 🔴</b><i class="animation"></i>
+    </button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p style="color: #000000;">Price is for design services only.<br> Printing costs are additional.</p>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+
+
+    <footer>
+        <h3><a href="https://techydhruv.com/" target="_blank"
+                style="text-decoration: none; color: #ffbb00; cursor: progress;">Check Out Our Website</a> <br><br> <a href="tel:6177787312" style="text-decoration: none; color: #00ff15;">Call us at +91
+                8320445975</a> </h3>
+    </footer>
+
+
+</body>
+
+</html>
